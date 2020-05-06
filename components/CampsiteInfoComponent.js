@@ -161,16 +161,14 @@ class CampsiteInfo extends Component {
                             leftIconContainerStyle={{paddingRight: 10}}
                             onChangeText={(author)=>this.setState({author: author})}
                             value={this.state.author}
-                            >
-                            </Input>
+                        />
                         <Input
                             placeholder='Comment'
                             leftIcon={{ type: 'font-awesome', name: 'comment-o' }}
                             leftIconContainerStyle={{paddingRight: 10}}
                             onChangeText={(text)=>this.setState({text: text})}
                             value={this.state.text}
-                            >
-                            </Input>
+                        />
                         <View style={{margin: 10}}>
                             <Button
                                 onPress={() => {this.handleComment(campsiteId);
